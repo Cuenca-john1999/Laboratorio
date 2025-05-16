@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratorio de Inmunología</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo_fib.png" alt="Logo FIB Hospital La Princesa" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#publicaciones">Publicaciones</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button id="switch-lang">ENG</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio">
+      <div class="lang es">
+        <h1>Bienvenidos al Laboratorio de Inmunología</h1>
+        <p>Nuestra misión es investigar, innovar y contribuir al avance del conocimiento en el campo de la inmunología clínica y experimental.</p>
+      </div>
+      <div class="lang en hidden">
+        <h1>Welcome to the Immunology Laboratory</h1>
+        <p>Our mission is to research, innovate, and contribute to the advancement of knowledge in the field of clinical and experimental immunology.</p>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo">
+      <div class="lang es">
+        <h2>Nuestro Equipo</h2>
+        <p>Aquí se mostrarán las fotos, nombres y roles de los miembros del laboratorio.</p>
+      </div>
+      <div class="lang en hidden">
+        <h2>Our Team</h2>
+        <p>This section will display photos, names, and roles of the lab members.</p>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <div class="lang es">
+        <h2>Proyectos de Investigación</h2>
+        <p>Descripción breve de las líneas actuales y pasadas de investigación.</p>
+      </div>
+      <div class="lang en hidden">
+        <h2>Research Projects</h2>
+        <p>Brief description of current and past research lines.</p>
+      </div>
+    </section>
+
+    <!-- PUBLICACIONES -->
+    <section id="publicaciones">
+      <div class="lang es">
+        <h2>Publicaciones</h2>
+        <ul>
+          <li>Autor et al. (2024). Título del artículo. <em>Revista Científica</em>.</li>
+        </ul>
+      </div>
+      <div class="lang en hidden">
+        <h2>Publications</h2>
+        <ul>
+          <li>Author et al. (2024). Article Title. <em>Scientific Journal</em>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria">
+      <div class="lang es">
+        <h2>Galería</h2>
+        <p>Imágenes del laboratorio, equipos y eventos científicos.</p>
+      </div>
+      <div class="lang en hidden">
+        <h2>Gallery</h2>
+        <p>Images of the lab, equipment, and scientific events.</p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="lang es">
+        <h2>Contacto</h2>
+        <p>Correo: <a href="mailto:contacto@labinmunologia.es">contacto@labinmunologia.es</a></p>
+      </div>
+      <div class="lang en hidden">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:contacto@labinmunologia.es">contacto@labinmunologia.es</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Laboratorio de Inmunología – FIB Hospital Universitario de La Princesa</p>
+  </footer>
+
+  <script>
+    const langButton = document.getElementById("switch-lang");
+    let currentLang = "es";
+
+    langButton.addEventListener("click", () => {
+      const sections = document.querySelectorAll(".lang");
+      sections.forEach(el => {
+        el.classList.toggle("hidden");
+      });
+
+      currentLang = currentLang === "es" ? "en" : "es";
+      langButton.textContent = currentLang.toUpperCase() === "ES" ? "ENG" : "ESP";
+    });
+  </script>
+
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</body>
+</html>
