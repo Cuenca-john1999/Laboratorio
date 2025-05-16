@@ -5,91 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laboratorio de Inmunología</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      background: linear-gradient(to right, #6a0572, #ab83a1);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+      background-image: url('rellenar_luego.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+    }
+    .hero a {
+      margin-top: 2rem;
+      display: inline-block;
+      background-color: #ffffff;
+      color: #6a0572;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .hero a:hover {
+      background-color: #eeeeee;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="logo">
       <img src="logo_fib.png" alt="Logo FIB Hospital La Princesa" />
     </div>
-  <nav>
-  <ul>
-    <li><span class="lang es"><a href="#inicio">Inicio</a></span><span class="lang en hidden"><a href="#inicio">Home</a></span></li>
-    <li><span class="lang es"><a href="#equipo">Equipo</a></span><span class="lang en hidden"><a href="#equipo">Team</a></span></li>
-    <li><span class="lang es"><a href="#proyectos">Proyectos</a></span><span class="lang en hidden"><a href="#proyectos">Research</a></span></li>
-    <li><span class="lang es"><a href="#publicaciones">Publicaciones</a></span><span class="lang en hidden"><a href="#publicaciones">Publications</a></span></li>
-    <li><span class="lang es"><a href="#galeria">Galería</a></span><span class="lang en hidden"><a href="#galeria">Gallery</a></span></li>
-    <li><span class="lang es"><a href="#contacto">Contacto</a></span><span class="lang en hidden"><a href="#contacto">Contact</a></span></li>
-    <li><button id="switch-lang">ENG</button></li>
-  </ul>
-</nav>
+    <nav>
+      <ul>
+        <li><span class="lang es"><a href="#inicio">Inicio</a></span><span class="lang en hidden"><a href="#inicio">Home</a></span></li>
+        <li><span class="lang es"><a href="#equipo">Equipo</a></span><span class="lang en hidden"><a href="#equipo">Team</a></span></li>
+        <li><span class="lang es"><a href="#proyectos">Proyectos</a></span><span class="lang en hidden"><a href="#proyectos">Research</a></span></li>
+        <li><span class="lang es"><a href="#publicaciones">Publicaciones</a></span><span class="lang en hidden"><a href="#publicaciones">Publications</a></span></li>
+        <li><span class="lang es"><a href="#galeria">Galería</a></span><span class="lang en hidden"><a href="#galeria">Gallery</a></span></li>
+        <li><span class="lang es"><a href="#contacto">Contacto</a></span><span class="lang en hidden"><a href="#contacto">Contact</a></span></li>
+        <li><button id="switch-lang">ENG</button></li>
+      </ul>
+    </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Laboratorio de Inmunología</h1>
+      <p class="lang es">Investigación clínica y experimental con impacto humano.</p>
+      <p class="lang en hidden">Clinical and experimental research with human impact.</p>
+      <a href="#inicio">Descubre más</a>
+    </div>
+  </section>
+
   <main>
-    <!-- INICIO -->
     <section id="inicio">
       <div class="lang es">
         <h1>Bienvenidos al Laboratorio de Inmunología</h1>
-        <p>(Rellenar)</p>
+        <p>Nuestra misión es investigar, innovar y contribuir al avance del conocimiento en el campo de la inmunología clínica y experimental.</p>
       </div>
       <div class="lang en hidden">
         <h1>Welcome to the Immunology Laboratory</h1>
-        <p>(Rellenar).</p>
+        <p>Our mission is to research, innovate, and contribute to the advancement of knowledge in the field of clinical and experimental immunology.</p>
       </div>
     </section>
 
-    <!-- EQUIPO -->
     <section id="equipo">
       <div class="lang es">
         <h2>Nuestro Equipo</h2>
-        <p>(Rellenar)</p>
+        <p>Aquí se mostrarán las fotos, nombres y roles de los miembros del laboratorio.</p>
       </div>
       <div class="lang en hidden">
         <h2>Our Team</h2>
-        <p>(Rellenar)</p>
+        <p>This section will display photos, names, and roles of the lab members.</p>
       </div>
     </section>
 
-    <!-- PROYECTOS -->
     <section id="proyectos">
       <div class="lang es">
         <h2>Proyectos de Investigación</h2>
-        <p>(Rellenar)</p>
+        <p>Descripción breve de las líneas actuales y pasadas de investigación.</p>
       </div>
       <div class="lang en hidden">
         <h2>Research Projects</h2>
-        <p>(Rellenar)</p>
+        <p>Brief description of current and past research lines.</p>
       </div>
     </section>
 
-    <!-- PUBLICACIONES -->
     <section id="publicaciones">
       <div class="lang es">
         <h2>Publicaciones</h2>
         <ul>
-          <li>(Rellenar)</em>.</li>
+          <li>Autor et al. (2024). Título del artículo. <em>Revista Científica</em>.</li>
         </ul>
       </div>
       <div class="lang en hidden">
         <h2>Publications</h2>
         <ul>
-          <li>(Rellenar)</em>.</li>
+          <li>Author et al. (2024). Article Title. <em>Scientific Journal</em>.</li>
         </ul>
       </div>
     </section>
 
-    <!-- GALERÍA -->
     <section id="galeria">
       <div class="lang es">
         <h2>Galería</h2>
-        <p>(Rellenar)</p>
+        <p>Imágenes del laboratorio, equipos y eventos científicos.</p>
       </div>
       <div class="lang en hidden">
         <h2>Gallery</h2>
-        <p>(Rellenar)</p>
+        <p>Images of the lab, equipment, and scientific events.</p>
       </div>
     </section>
 
-    <!-- CONTACTO -->
     <section id="contacto">
       <div class="lang es">
         <h2>Contacto</h2>
@@ -97,7 +147,7 @@
       </div>
       <div class="lang en hidden">
         <h2>Contact</h2>
-        <p><em>(Correo electrónico por confirmar)</em></p>
+        <p><em>(Email to be confirmed)</em></p>
       </div>
     </section>
   </main>
@@ -120,11 +170,5 @@
       langButton.textContent = currentLang.toUpperCase() === "ES" ? "ENG" : "ESP";
     });
   </script>
-
-  <style>
-    .hidden {
-      display: none;
-    }
-  </style>
 </body>
 </html>
